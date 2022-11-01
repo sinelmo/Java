@@ -1,0 +1,39 @@
+1. contains()
+public boolean contains(CharSequence s)
+
+파라미터로 입력받은 CharSequence s 를 문자열이 포함하고 있는지 여부를 return한다.
+
+Ex) 
+String str = "She is Momo, and he is Mimi. They're my cats.";
+
+System.out.println(str.contains("Momo"); // true
+System.out.println(str.contains("momo"); // false - contains는 대소문자를 구분한다.
+System.out.println(str.contains("Mimi"); // true
+System.out.println(str.contains(" "); // true
+
+2. indexOf()
+public int indexOf(int ch) // 유니코드표의 값을 사용하여 원하는 문자열의 위치를 찾습니다
+public int indexOf(int ch, int fromIndxex) // 유니코드표의 값을 사용하여 원하는 문자열을 찾지만 첫 번째부터 찾는 것이 아닌 fromIndx의 값에서 시작해서 문자열을 찾아줍니다
+public int indexOf(String str) // 문자열에서 같은 문자의 위치를 찾습니다
+public int indexOf(String str, int fromIndex) // 문자열에서 같은 문자의 위치를 찾지만 fromIndex의 값에서 시작해서 문자열을 찾아줍니다
+
+파라미터로 입력받은 문자나 문자열을 원본문자열에서 처음 나타나는 index를 찾아서 return합니다.
+만약, 찾는 문자나 문자열이 없으면 -1을 리턴합니다.
+
+3. matches()
+public boolean matches(String regex)
+정규식을 이용하여, 문자열에 정규식과 일치하는지 여부를 return한다.
+파라미터로 정규식을 입력받는다.
+- 복잡한 패턴을 체크해야 할 때는 matches() 많이 사용
+
+Ex)
+public class StringContainsString {
+    public static void main(String[] args) {
+ 
+        String str = "hello Java!";
+ 
+        System.out.println(str.matches("he")); // false
+        System.out.println(str.matches("(.*)he(.*)")); // true
+    }
+}
+
