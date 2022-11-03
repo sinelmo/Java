@@ -1,0 +1,27 @@
+java.util.Arrays
+
+public static void sort(primitive type array a)
+// 인자 값으로 byte[], char[], double[], long[], int[], float[] 등을 받으며, 오름차순 정렬한다.
+
+public static void sort(primitive type array a, int fromIndex, int toIndex)
+
+public static void sort(Object[] a) 
+// Integer[], Double[], Character[] 등의 객체를 받아 오름차순 정렬한다.
+
+public static void sort(Object[] a, int fromIndex, int toIndex)
+
+public static void sort(T[] a, Comparator<? super T> c) 
+// 인자 값으로 객체를 받으며, 지정된 Comparator가 가리키는 순서에 따라 지정된 객체의 배열을 오름차순 정렬한다.
+
+public static void sort(T[] a, int fromIndex, int toIndex, Comparator<? super T> c)
+
+
+# 내림차순 정렬
+Colloctions 클래스의 reverseOrder() 함수를 사용하면 된다.
+
+Ex)
+Arrays.sort(arr, Collections.reverseOrder());
+
+# int 배열 내림차순 정렬
+Integer[] arrDesc = Arrays.stream(arr).boxed().toArray(Integer[]::new);
+Arrays.sort(arrDesc, Collections.reverseOrder());
