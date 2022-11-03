@@ -9,4 +9,5 @@ array[2][0] : 5
 array[2][1] : 6
 
 * 배열의 길이
-array.length()
+array.length; // == 3
+array[0].length; // == 2
