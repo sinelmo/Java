@@ -1,0 +1,9 @@
+# Int 를 Char 로
+int i;
+Char ch = (char)i;
+
+# str.charAt(int i)
+ - 문자열 str의 i번째 문자를 return
+ 
+# 정규식 : 모든 문자열
+str.matches("(.*)CAT(.*)"); // 문자열 어디든 CAT이 포함되있으면 true return
