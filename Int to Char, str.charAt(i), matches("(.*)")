@@ -1,6 +1,7 @@
 # Int 를 Char 로
 int i;
-Char ch = (char)i;
+Char ch = (char)(i+48);
+=> (char)Integer 은 ASCII코드값을 RETURN해준다. 그래서 숫자 0~9 를 RETURN 하고싶으면 INT 에 48을 더해주면 된다.
 
 # str.charAt(int i)
  - 문자열 str의 i번째 문자를 return
