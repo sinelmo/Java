@@ -1,0 +1,41 @@
+1. STS3 다운
+https://github.com/spring-attic/toolsuite-distribution/wiki/Spring-Tool-Suite-3
+여기 들어가셔서 full distriution on Eclipse 4.21
+의 맨 첫번째 ~win32-x86_64.zip 다운받으셔서 압축 풀어주세요.
+
+2. jdk11 다운
+https://www.oracle.com/kr/java/technologies/javase/jdk11-archive-downloads.html
+여기서
+Windows x64 Installer
+다운받아주세요.
+
+※ 기존에 깔려있던 jdk는 프로그램 추가/제거 에서 삭제 해주시고 다운받아주세요.
+
+3. jdk11 환경변수 설정
+https://prolite.tistory.com/975
+보시고 따라해주시면 됩니다.
+
+4. sts3 실행 해주시고 C:\폴더명 따로 생성해서 실행해주세요.
+
+5. sts3에서 프로젝트 생성
+1) File > New > Spring Legacy Project
+2) Project name 적어주세요
+3) Templates: 에서 Spring MVC Project 클릭 후 Next
+4) 대충 아무렇게나 써주세요 ex) com.yonhee.board
+5) Finish 클릭
+
+6. sts3 jdk 설정 
+1) Window > Preferences > Java > Installed JREs
+2) Add 클릭
+3) Standard VM 클릭
+4) Directory... 클릭 후 jdk11 폴더 선택
+5) FInish 클릭
+6) Apply 클릭
+
+6-1 생성한 프로젝트명 우클릭 > Properties > Project Facets
+Java의 Version 을 11로 변경 후 Apply and Close
+
+7. encoding 설정
+1) Window > Preferences > Web 하위의
+CSS Files, HTML Files, JSP Files 모두 
+Korean, EUC-KR 을 UTF-8로 변경해주세요
