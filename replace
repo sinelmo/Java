@@ -1,0 +1,6 @@
+# String 의 특정 char를 치환
+  String str = "abcaa";
+  String str2 = str.replace("a", "A");
+  
+  System.out.println(str); // abcaa
+  System.out.println(str2); // AbcAA
