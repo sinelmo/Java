@@ -4,3 +4,7 @@
   
   System.out.println(str); // abcaa
   System.out.println(str2); // AbcAA
+
+# String의 char 첫번째 위치를 반환
+  String str = "abc";
+  int index = str.indexOf("a"); // index == 0
