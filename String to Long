@@ -1,3 +1,7 @@
 # String 을 Long 으로 변환 (Integer과 비슷)
   String str = "123";
   Long long = Long.parseLong(str);
+  
+# String 을 Int 로 변환
+  String str = "123";
+  int i = Integer.parseInt(str);
