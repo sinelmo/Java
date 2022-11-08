@@ -1,0 +1,5 @@
+# Math.abs()
+ - 인자값에 대한 절대값을 반환하는 함수
+ - 인자값의 type으로는 int, float, long, double등 primitive data type 입력이 가능하다.
+ - 입력된 데이터 타입이 그대로 리턴되는 함수
+ - static 함수이다.
