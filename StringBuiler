@@ -1,0 +1,48 @@
+※ Constructor Summary (생성자)
+StringBuilder()
+StringBuilder(int capacity) // capacity == 용량
+StringBuilder(charSequence seq) // ??
+StringBuilder(String str)
+
+※ Method Summary
+- return StringBuilder
+append(boolean b)
+append(char c)
+append(char[] str)
+append(char[] str, int offset, int len) // ??
+append(double d)
+append(float f)
+append(int i)
+append(long lng)
+append(charSequence s)
+append(CharSequence s , int start, int end)
+append(Object obj) // ??
+append(String str)
+append(StringBuffer sb)
+appendCodePoint(int codePoint) // 해당 ASCII코드의 charactor을 추가한다.
+
+delete(int start, int end)
+deleteCharAt(int index)
+
+insert(int offset, boolean b) // boolean, char, char[], double, float, int, long, CharSequence, Object, String
+insert(int index, char[] str ,int offset, int len) // ??
+
+replace(int start, int end, String str)
+reverse() // Causes this character sequence to be replaced by the reverse of the sequence.
+
+int capacity() // return thr current capacity
+char charAt(int index)
+
+. . . 
+
+void getChars(int srcBegin, int srcEnd, char[] dsst, int dstBegin)
+int indexOf(String str)
+int indexOf(String str, int fromIndex)
+int lastIndexOf(String str) // 지정된 하위 문자열이 마지막으로 나타나는 문자열 내의 인덱스를 반환
+int lastIndexOf(String str, int fromIndex)
+int length()
+void setCharAt(int index, char ch)
+void setLength(int new Length)
+String substring(int start)
+String substring(int start, int end)
+String toString()
